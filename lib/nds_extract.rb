@@ -40,6 +40,7 @@ directors_database(nds)
   directors_gross
 end
 ```
+
 def directors_totals(nds)
   result = {}
   nil
