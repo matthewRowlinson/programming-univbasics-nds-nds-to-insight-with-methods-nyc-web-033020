@@ -22,7 +22,8 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 
-def directors_database(nds)
+```
+directors_database(nds)
   this_director_gross = 0 
   directors_gross = {}
   director_i = 0 
@@ -38,7 +39,7 @@ def directors_database(nds)
   end
   directors_gross
 end
-
+```
 def directors_totals(nds)
   result = {}
   nil
