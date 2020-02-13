@@ -21,6 +21,12 @@ end
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
+
+def directors_database(nds)
+  directors_gross = {}
+  
+end
+
 def directors_totals(nds)
   result = {}
   nil
