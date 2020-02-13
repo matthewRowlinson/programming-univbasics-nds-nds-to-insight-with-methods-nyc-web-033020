@@ -23,8 +23,20 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_database(nds)
+  this_director_gross = 0 
   directors_gross = {}
-  
+  director_i = 0 
+  while director_i < nds.count do 
+    movie_i = 0 
+    while movie_i < nds[director_i][:movies].count do 
+    this_director_gross += nds[director_i][:movies][movie_i][:worldwide_gross]
+    movie_i += 1 
+    end
+    directors_gross[nds[director_i][:name]] = this_director_gross
+    this_director_gross = 0 
+    director_i += 1 
+  end
+  directors_gross
 end
 
 def directors_totals(nds)
